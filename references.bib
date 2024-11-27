@@ -1,0 +1,143 @@
+@INPROCEEDINGS{Smith2016,
+  author={Smith, Shaden and Karypis, George},
+  booktitle={2016 IEEE International Parallel and Distributed Processing Symposium (IPDPS)}, 
+  title={A Medium-Grained Algorithm for Sparse Tensor Factorization}, 
+  year={2016},
+  volume={},
+  number={},
+  pages={902-911},
+  keywords={Tensile stress;Matrix decomposition;Sparse matrices;Distributed databases;Memory management;Parallel processing;Scalability;Sparse tensor;distributed;PARAFAC;CPD;parallel;medium-grained},
+  doi={10.1109/IPDPS.2016.113}}
+
+@inproceedings{Soh2024,
+author = {Soh, Yongseok and Kannan, Ramakrishnan and Sao, Piyush and Choi, Jee},
+title = {Accelerated Constrained Sparse Tensor Factorization on Massively Parallel Architectures},
+year = {2024},
+isbn = {9798400717932},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3673038.3673128},
+doi = {10.1145/3673038.3673128},
+abstract = {This study presents the first constrained sparse tensor factorization (cSTF) framework that optimizes and fully offloads computation to massively parallel GPU architectures, and the first performance characterization of cSTF on GPU architectures. In contrast to prior work on tensor factorization, where the matricized tensor times Khatri-Rao product (MTTKRP) is the primary performance bottleneck, our systematic analysis of the cSTF algorithm on GPUs reveals that adding constraints creates an additional bottleneck in the update operation for many real-world sparse tensors. While executing the update operation on the GPU brings significant speedup over its CPU counterpart, it remains a significant bottleneck. To further accelerate the update operation, we propose cuADMM, a new update algorithm that leverages algorithmic and code optimization strategies to minimize both computation and data movement on GPUs. As a result, our framework delivers significantly improved performance compared to prior state-of-the-art. On 10 real-world sparse tensors, our framework achieves geometric mean speedup of 5.1 \texttimes{} (max 41.59 \texttimes{}) and 7.01 \texttimes{} (max 58.05 \texttimes{}) on the NIVIDA A100 and H100 GPUs, respectively, over the state-of-the-art SPLATT library running on a 26-core Intel Ice Lake Xeon CPU.},
+booktitle = {Proceedings of the 53rd International Conference on Parallel Processing},
+pages = {107–116},
+numpages = {10},
+keywords = {accelerated sparse tensor Factorization, algorithm, constrained tensor factorization, high performance},
+location = {Gotland, Sweden},
+series = {ICPP '24}
+}
+
+@article{Ahmed2021,
+  author       = {Ahmed E. Helal and
+                  Jan Laukemann and
+                  Fabio Checconi and
+                  Jesmin Jahan Tithi and
+                  Teresa M. Ranadive and
+                  Fabrizio Petrini and
+                  Jeewhan Choi},
+  title        = {{ALTO:} Adaptive Linearized Storage of Sparse Tensors},
+  journal      = {CoRR},
+  volume       = {abs/2102.10245},
+  year         = {2021},
+  url          = {https://arxiv.org/abs/2102.10245},
+  eprinttype    = {arXiv},
+  eprint       = {2102.10245},
+  timestamp    = {Wed, 24 Feb 2021 15:42:45 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2102-10245.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{Blanco2018,
+author = {Blanco, Zachary and Liu, Bangtian and Dehnavi, Maryam Mehri},
+title = {CSTF: Large-Scale Sparse Tensor Factorizations on Distributed Platforms},
+year = {2018},
+isbn = {9781450365109},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3225058.3225133},
+doi = {10.1145/3225058.3225133},
+abstract = {Tensors, or N-dimensional arrays, are increasingly used to represent multi-dimensional data. Sparse tensor decomposition algorithms are of particular interest in analyzing and compressing big datasets due to the fact that most of real-world data is sparse and multi-dimensional. However, state-of-the-art tensor decomposition algorithms are not scalable for overwhelmingly large and higher-order sparse tensors on distributed platforms. In this paper, we use the MapReduce model and the Spark engine to implement tensor factorizations on distributed platforms. The proposed CSTF algorithm, Cloud-based Sparse Tensor Factorization, is a scalable distributed algorithm for tensor decompositions for large data. It uses the coordinate storage format (COO) to operate on the tensor nonzeros directly, thus, eliminating the need for tensor unfolding and the storage of intermediate data. Also, a novel queuing strategy (QCOO) is proposed to exploit the dependency and data reuse between a sequence of tensor operations in tensor decomposition algorithms. Details on the key-value storage paradigm and Spark features used to implement the algorithm and the data reuse strategies are also provided. The queuing strategy reduces data communication costs by 35\% for 3rd-order tensors and by 31\% for 4th-order tensors over the COO-based implementation respectively. Compared to the state-of-the-art work, BIGtensor, CSTF achieves 2.2\texttimes{} to 6.9\texttimes{} speedup for 3rd-order tensor decompositions.},
+booktitle = {Proceedings of the 47th International Conference on Parallel Processing},
+articleno = {21},
+numpages = {10},
+location = {Eugene, OR, USA},
+series = {ICPP '18}
+}
+
+@inproceedings{Bharadwaj2024, series={SPAA ’24},
+   title={Distributed-Memory Randomized Algorithms for Sparse Tensor CP Decomposition},
+   url={http://dx.doi.org/10.1145/3626183.3659980},
+   DOI={10.1145/3626183.3659980},
+   booktitle={Proceedings of the 36th ACM Symposium on Parallelism in Algorithms and Architectures},
+   publisher={ACM},
+   author={Bharadwaj, Vivek and Malik, Osman Asif and Murray, Riley and Buluç, Aydın and Demmel, James},
+   year={2024},
+   month=jun, pages={155–168},
+   collection={SPAA ’24} }
+
+@INPROCEEDINGS{Nisa2019,
+  author={Nisa, Israt and Li, Jiajia and Sukumaran-Rajam, Aravind and Vuduc, Richard and Sadayappan, P.},
+  booktitle={2019 IEEE International Parallel and Distributed Processing Symposium (IPDPS)}, 
+  title={Load-Balanced Sparse MTTKRP on GPUs}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={123-133},
+  keywords={Tensors;Sparse matrices;Matrix decomposition;Indexes;Graphics processing units;Kernel;Multicore processing;MTTKRP;CPD;GPU;Sparse tensor},
+  doi={10.1109/IPDPS.2019.00023}}
+
+@inproceedings{Nguyen2022,
+author = {Nguyen, Andy and Helal, Ahmed E. and Checconi, Fabio and Laukemann, Jan and Tithi, Jesmin Jahan and Soh, Yongseok and Ranadive, Teresa and Petrini, Fabrizio and Choi, Jee W.},
+title = {Efficient, out-of-memory sparse MTTKRP on massively parallel architectures},
+year = {2022},
+isbn = {9781450392815},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3524059.3532363},
+doi = {10.1145/3524059.3532363},
+abstract = {Tensor decomposition (TD) is an important method for extracting latent information from high-dimensional (multi-modal) sparse data. This study presents a novel framework for accelerating fundamental TD operations on massively parallel GPU architectures. In contrast to prior work, the proposed Blocked Linearized Coordinate (BLCO) format enables efficient out-of-memory computation of tensor algorithms using a unified implementation that works on a single tensor copy. Our adaptive blocking and linearization strategies not only meet the resource constraints of GPU devices, but also accelerate data indexing, eliminate control-flow and memory-access irregularities, and reduce kernel launching overhead. To address the substantial synchronization cost on GPUs, we introduce an opportunistic conflict resolution algorithm, in which threads collaborate instead of contending on memory access to discover and resolve their conflicting updates on-the-fly, without keeping any auxiliary information or storing non-zero elements in specific mode orientations. As a result, our framework delivers superior in-memory performance compared to prior state-of-the-art, and is the only framework capable of processing out-of-memory tensors. On the latest Intel and NVIDIA GPUs, BLCO achieves 2.12 -- 2.6X geometric-mean speedup (with up to 33.35X speedup) over the state-of-the-art mixed-mode compressed sparse fiber (MM-CSF) on a range of real-world sparse tensors.},
+booktitle = {Proceedings of the 36th ACM International Conference on Supercomputing},
+articleno = {26},
+numpages = {13},
+keywords = {GPU, MTTKRP, parallel performance, sparse formats, sparse tensors, tensor decomposition},
+location = {Virtual Event},
+series = {ICS '22}
+}
+
+@INPROCEEDINGS{Hoefler2009,
+  author={Hoefler, Torsten and Traff, Jesper Larsson},
+  booktitle={2009 IEEE International Symposium on Parallel & Distributed Processing}, 
+  title={Sparse collective operations for MPI}, 
+  year={2009},
+  volume={},
+  number={},
+  pages={1-8},
+  keywords={National electric code;Europe;Message passing;Libraries;Open systems;Laboratories;Nearest neighbor searches;Communication standards;Error correction;Network topology},
+  doi={10.1109/IPDPS.2009.5160935}}
+
+
+@inproceedings{Fei2021,
+author = {Fei, Jiawei and Ho, Chen-Yu and Sahu, Atal N. and Canini, Marco and Sapio, Amedeo},
+title = {Efficient sparse collective communication and its application to accelerate distributed deep learning},
+year = {2021},
+isbn = {9781450383837},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3452296.3472904},
+doi = {10.1145/3452296.3472904},
+abstract = {Efficient collective communication is crucial to parallel-computing applications such as distributed training of large-scale recommendation systems and natural language processing models. Existing collective communication libraries focus on optimizing operations for dense inputs, resulting in transmissions of many zeros when inputs are sparse. This counters current trends that see increasing data sparsity in large models.We propose OmniReduce, an efficient streaming aggregation system that exploits sparsity to maximize effective bandwidth use by sending only non-zero data blocks. We demonstrate that this idea is beneficial and accelerates distributed training by up to 8.2x. Even at 100 Gbps, OmniReduce delivers 1.4--2.9x better performance for network-bottlenecked DNNs.},
+booktitle = {Proceedings of the 2021 ACM SIGCOMM 2021 Conference},
+pages = {676–691},
+numpages = {16},
+keywords = {deep learning, distributed training},
+location = {Virtual Event, USA},
+series = {SIGCOMM '21}
+}
+
+@manual{mpi41,
+    author = "{Message Passing Interface Forum}",
+    title  = "{MPI}: A Message-Passing Interface Standard Version 4.1",
+    url    = "https://www.mpi-forum.org/docs/mpi-4.1/mpi41-report.pdf",
+    year   = 2023,
+    month  = nov
+}
