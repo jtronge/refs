@@ -180,3 +180,21 @@ keywords = {sparse input vectors, sparse allreduce, sparse allgather},
 location = {Denver, Colorado},
 series = {SC '19}
 }
+
+@inproceedings{Li2022,
+author = {Li, Shigang and Hoefler, Torsten},
+title = {Near-optimal sparse allreduce for distributed deep learning},
+year = {2022},
+isbn = {9781450392044},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3503221.3508399},
+doi = {10.1145/3503221.3508399},
+abstract = {Communication overhead is one of the major obstacles to train large deep learning models at scale. Gradient sparsification is a promising technique to reduce the communication volume. However, it is very challenging to obtain real performance improvement because of (1) the difficulty of achieving an scalable and efficient sparse allreduce algorithm and (2) the sparsification overhead. This paper proposes Ok-Topk, a scheme for distributed training with sparse gradients. Ok-Topk integrates a novel sparse allreduce algorithm (less than 6k communication volume which is asymptotically optimal) with the decentralized parallel Stochastic Gradient Descent (SGD) optimizer, and its convergence is proved. To reduce the sparsification overhead, Ok-Topk efficiently selects the top-k gradient values according to an estimated threshold. Evaluations are conducted on the Piz Daint supercomputer with neural network models from different deep learning domains. Empirical results show that Ok-Topk achieves similar model accuracy to dense allreduce. Compared with the optimized dense and the state-of-the-art sparse allreduces, Ok-Topk is more scalable and significantly improves training throughput (e.g., 3.29x-12.95x improvement for BERT on 256 GPUs).},
+booktitle = {Proceedings of the 27th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+pages = {135–149},
+numpages = {15},
+keywords = {allreduce, data parallelism, distributed deep learning, gradient sparsification},
+location = {Seoul, Republic of Korea},
+series = {PPoPP '22}
+}
