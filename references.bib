@@ -289,3 +289,17 @@ isbn="978-3-031-08751-6"
   pages={527-536},
   keywords={Proteins;Scalability;Graphics processing units;Genomics;Tools;Supercomputers;Partitioning algorithms;GPU;k-mer counter;distributed memory},
   doi={10.1109/IPDPS49936.2021.00061}}
+
+@article{AMGBell2012,
+    author = {Bell, Nathan and Dalton, Steven and Olson, Luke N.},
+    title = {Exposing Fine-Grained Parallelism in Algebraic Multigrid Methods},`
+    journal = {SIAM Journal on Scientific Computing},
+    volume = {34},
+    number = {4},
+    pages = {C123-C152},
+    year = {2012},
+    doi = {10.1137/110838844},
+    URL = {https://doi.org/10.1137/110838844},
+    eprint = {https://doi.org/10.1137/110838844},
+    abstract = { Algebraic multigrid methods for large, sparse linear systems are a necessity in many computational simulations, yet parallel algorithms for such solvers are generally decomposed into coarse-grained tasks suitable for distributed computers with traditional processing cores. However, accelerating multigrid methods on massively parallel throughput-oriented processors, such as graphics processing units, demands algorithms with abundant fine-grained parallelism. In this paper, we develop a parallel algebraic multigrid method which exposes substantial fine-grained parallelism in both the construction of the multigrid hierarchy as well as the cycling or solve stage. Our algorithms are expressed in terms of scalable parallel primitives that are efficiently implemented on the GPU. The resulting solver achieves an average speedup of \$1.8\times\$ in the setup phase and \$5.7\times\$ in the cycling phase when compared to a representative CPU implementation. }
+}
