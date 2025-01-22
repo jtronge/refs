@@ -457,27 +457,7 @@ numpages = {27},
 keywords = {Sparse tensor, tensor decomposition, CPD, irregularity}
 }
 
-@article{zheng-2023,
-author = {Miao, Zheng and Calhoun, Jon C. and Ge, Rong and Li, Jiajia},
-title = {Performance Implication of Tensor Irregularity and Optimization for Distributed Tensor Decomposition},
-year = {2023},
-issue_date = {June 2023},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-volume = {10},
-number = {2},
-issn = {2329-4949},
-url = {https://doi.org/10.1145/3580315},
-doi = {10.1145/3580315},
-abstract = {Tensors are used by a wide variety of applications to represent multi-dimensional data; tensor decompositions are a class of methods for latent data analytics, data compression, and so on. Many of these applications generate large tensors with irregular dimension sizes and nonzero distribution. CANDECOMP/PARAFAC decomposition (Cpd) is a popular low-rank tensor decomposition for discovering latent features. The increasing overhead on memory and execution time of Cpd for large tensors requires distributed memory implementations as the only feasible solution. The sparsity and irregularity of tensors hinder the improvement of performance and scalability of distributed memory implementations. While previous works have been proved successful in Cpd for tensors with relatively regular dimension sizes and nonzero distribution, they either deliver unsatisfactory performance and scalability for irregular tensors or require significant time overhead in preprocessing. In this work, we focus on medium-grained tensor distribution to address their limitation for irregular tensors. We first thoroughly investigate through theoretical and experimental analysis. We disclose that the main cause of poor Cpd performance and scalability is the imbalance of multiple types of computations and communications and their tradeoffs; and sparsity and irregularity make it challenging to achieve their balances and tradeoffs. Irregularity of a sparse tensor is categorized based on two aspects: very different dimension sizes and a non-uniform nonzero distribution. Typically, focusing on optimizing one type of load imbalance causes other ones more severe for irregular tensors. To address such challenges, we propose irregularity-aware distributed Cpd that leverages the sparsity and irregularity information to identify the best tradeoff between different imbalances with low time overhead. We materialize the idea with two optimization methods: the prediction-based grid configuration and matrix-oriented distribution policy, where the former forms the global balance among computations and communications, and the latter further adjusts the balances among computations. The experimental results show that our proposed irregularity-aware distributed Cpd is more scalable and outperforms the medium- and fine-grained distributed implementations by up to 4.4 \texttimes{} and 11.4 \texttimes{} on 1,536 processors, respectively. Our optimizations support different sparse tensor formats, such as compressed sparse fiber (CSF), coordinate (COO), and Hierarchical Coordinate (HiCOO), and gain good scalability for all of them.},
-journal = {ACM Trans. Parallel Comput.},
-month = jun,
-articleno = {10},
-numpages = {27},
-keywords = {irregularity, CPD, tensor decomposition, Sparse tensor}
-}
-
-@INPROCEEDINGS{zheng-2022,
+@INPROCEEDINGS{miao-2022,
   author={Miao, Zheng and Li, Jiajia and Calhoun, Jon C. and Ge, Rong},
   booktitle={2022 IEEE International Conference on Cluster Computing (CLUSTER)},
   title={BALA-CPD: BALanced and Asynchronous Distributed Tensor Decomposition},
