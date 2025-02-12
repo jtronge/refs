@@ -641,3 +641,38 @@ keywords = {parallel algorithms, distributed computing, Deep learning}
     topic = {performance tuning; tensor; tensor decomposition; autotuning; sparse multi-linear algebra},
     year = {2018},
 }
+
+@article{bader-efficient-sparse-tensors-2008,
+author = {Bader, Brett W. and Kolda, Tamara G.},
+title = {Efficient MATLAB Computations with Sparse and Factored Tensors},
+journal = {SIAM Journal on Scientific Computing},
+volume = {30},
+number = {1},
+pages = {205-231},
+year = {2008},
+doi = {10.1137/060676489},
+URL = { https://doi.org/10.1137/060676489 },
+eprint = {https://doi.org/10.1137/060676489},
+abstract = { In this paper, the term tensor refers simply to a multidimensional or N-way array, and we consider how specially structured tensors allow for efficient storage and computation. First, we study sparse tensors, which have the property that the vast majority of the elements are zero. We propose storing sparse tensors using coordinate format and describe the computational efficiency of this scheme for various mathematical operations, including those typical to tensor decomposition algorithms. Second, we study factored tensors, which have the property that they can be assembled from more basic components. We consider two specific types: A Tucker tensor can be expressed as the product of a core tensor (which itself may be dense, sparse, or factored) and a matrix along each mode, and a Kruskal tensor can be expressed as the sum of rank-1 tensors. We are interested in the case where the storage of the components is less than the storage of the full tensor, and we demonstrate that many elementary operations can be computed using only the components. All of the efficiencies described in this paper are implemented in the Tensor Toolbox for MATLAB. }
+}
+
+@article{tensor-review,
+author = {Kolda, Tamara G. and Bader, Brett W.},
+title = {Tensor Decompositions and Applications},
+journal = {SIAM Review},
+volume = {51},
+number = {3},
+pages = {455-500},
+year = {2009},
+doi = {10.1137/07070111X},
+URL = { https://doi.org/10.1137/07070111X },
+eprint = { https://doi.org/10.1137/07070111X },
+abstract = { Abstract. This survey provides an overview of higher-order tensor decompositions, their applications, and available software. A tensor is a multidimensional or \(N\)-way array. Decompositions of higher-order tensors (i.e., \(N\)-way arrays with \(N \ge 3\)) have applications in psychometrics, chemometrics, signal processing, numerical linear algebra, computer vision, numerical analysis, data mining, neuroscience, graph analysis, and elsewhere. Two particular tensor decompositions can be considered to be higher-order extensions of the matrix singular value decomposition: CANDECOMP/PARAFAC (CP) decomposes a tensor as a sum of rank-one tensors, and the Tucker decomposition is a higher-order form of principal component analysis. There are many other tensor decompositions, including INDSCAL, PARAFAC2, CANDELINC, DEDICOM, and PARATUCK2 as well as nonnegative variants of all of the above. The N-way Toolbox, Tensor Toolbox, and Multilinear Engine are examples of software packages for working with tensors. }
+}
+
+@unpublished{vijay-2025,
+    title = {CUTLASS 3.x: A Microkernel Abstraction for GPU Linear Algebra},
+    author = {Vijay Thakkar},
+    year = {2025},
+    note = {Presented at HotCSE Seminar}
+}
